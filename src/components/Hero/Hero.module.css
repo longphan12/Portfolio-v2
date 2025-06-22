@@ -3,7 +3,26 @@
     align-items: center;
     height: 100vh;
     width: 100%;
-    color: #fff;
+    color: #FEF6DF;
+}
+
+@keyframes scrollDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(7px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.scrollDown {
+    position: absolute;
+    bottom: 125px;
+    left: 50%;
+    animation: scrollDown 1.5s infinite;
 }
 
 .name {
@@ -23,13 +42,24 @@
     animation: elegantFadeIn 1.2s ease-out;
 }
 
+.profilePhoto {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
 .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-grow: 1;   
     width: 50%;
+    padding-right: 100px;
 }
 
 .title {
-    color: #6a6b70;
+    color: #8b8d95;
     font-size: 1.5rem;
 }
 
@@ -52,13 +82,31 @@
 }
 
 .resumeButton {
-    width: 100%;
-    height: 100%;
+    width: 125px;
+    height: 50px;
+    background-color: transparent;
+    color: #FEF6DF;
+    border: 2px solid #FEF6DF;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.resumeButton:hover {
+    border-color: transparent;
+    background-color: #fff;
+    color: #000;
 }
 
 .contactButton {
-    width: 100%;
-    height: 100%;
+    width: 125px;
+    height: 50px;
+    background-color: #FEF6DF;
+    transition: all 0.2s ease-in-out;
+}
+
+.contactButton:hover {
+    background-color: #fff;
+    border-color: transparent;
 }
 /* .buttonContainer {
     position: relative;
