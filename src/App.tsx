@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
+import About from './components/About/About'
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
     <div className='appContainer' style={containerStyle as React.CSSProperties}>
       <Navbar />
       <Hero />
+      <About />
     </div>
   )
 }

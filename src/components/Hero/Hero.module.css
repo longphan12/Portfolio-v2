@@ -3,7 +3,7 @@
     align-items: center;
     height: 100vh;
     width: 100%;
-    color: #FEF6DF;
+    color: #fff;
 }
 
 @keyframes scrollDown {
@@ -26,7 +26,7 @@
 }
 
 .name {
-    font-size: 5rem;
+    font-size: 5.5rem;
     font-weight: 600;
 }
 
@@ -43,10 +43,11 @@
 }
 
 .profilePhoto {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     border: 2px solid #fff;
+    animation: elegantFadeIn 1.2s ease-out;
 }
 
 .right {
@@ -56,11 +57,12 @@
     flex-grow: 1;   
     width: 50%;
     padding-right: 100px;
+
 }
 
 .title {
     color: #8b8d95;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 @keyframes typewriter {
@@ -85,8 +87,8 @@
     width: 125px;
     height: 50px;
     background-color: transparent;
-    color: #FEF6DF;
-    border: 2px solid #FEF6DF;
+    color: #ff8c00;
+    border: 2px solid #ff8c00;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
@@ -100,7 +102,7 @@
 .contactButton {
     width: 125px;
     height: 50px;
-    background-color: #FEF6DF;
+    background-color: #ff8c00;
     transition: all 0.2s ease-in-out;
 }
 
@@ -113,7 +115,7 @@
 } */
 
 .shadow {
-    background-color: white;
+    background-color: #ff8c00;
     margin-top: 10px;
     width: 100%;
     height: 100%;
@@ -125,7 +127,7 @@
 @keyframes elegantFadeIn {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(30px);
     }
     to {
         opacity: 1;
