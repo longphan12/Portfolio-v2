@@ -12,7 +12,7 @@ function App() {
 
   useEffect(() => {
       const handleMouseMove = (e: MouseEvent) => {
-          setMousePos({x: e.clientX, y: e.clientY})
+          setMousePos({x: e.pageX, y: e.pageY}) // could do clienX + window.scrollX, clientY + window.scrollY
       };       
       window.addEventListener('mousemove', handleMouseMove)
       return () => {
