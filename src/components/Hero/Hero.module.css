@@ -26,12 +26,11 @@
 }
 
 .name {
-    font-size: 5.5rem;
+    font-size: 5rem;
     font-weight: 600;
 }
 
 .left {
-    padding-left: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,8 +55,6 @@
     align-items: center;
     flex-grow: 1;   
     width: 50%;
-    padding-right: 100px;
-
 }
 
 .title {
@@ -110,9 +107,6 @@
     background-color: #fff;
     border-color: transparent;
 }
-/* .buttonContainer {
-    position: relative;
-} */
 
 .shadow {
     background-color: #ff8c00;
@@ -138,4 +132,43 @@
 .socials {
     display: flex;
     gap: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .name {
+        font-size: 4rem;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .profilePhoto {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .left {
+        width: 100%;
+        height: 100%;
+    }
+    .name {
+        font-size: 3rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .profilePhoto {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+    
 }

@@ -21,17 +21,19 @@
 }
 
 .skills {
-    width: 50%;
+    width: 100%;
     border: 1px solid #fff;
     height: 100%;
     border-radius: 20px;
+    background-color: #2C2C6C;
 }
 
 .education {
-    width: 50%;
+    width: 100%;
     border: 1px solid #fff;
     height: 100%;
     border-radius: 20px;
+    background-color: #2C2C6C;
 }
 
 .introduction {
@@ -72,17 +74,23 @@
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
-    .aboutContainer {
-        padding: 2rem 1rem;
+@media (max-width: 1024px) {
+    .descriptionContainer {
+        max-width: 700px;
     }
-    
+}
+
+@media (max-width: 768px) {
     .aboutMe {
         font-size: 2.5rem;
     }
-    
+
+    .descriptionContainer {
+        max-width: 500px;
+    }
+
     .description {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         text-align: center;
     }
     
@@ -92,9 +100,51 @@
     }
 }
 
-@media (max-width: 1024px) {
+.educationTitle {
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.educationIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.education ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.education ul li {
+    padding: 3px 0;
+}
+.education ul li:nth-child(1) {
+    padding-top: 0;
+}
+
+
+
+
+.educationContent {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #A6A6C2;
+    padding: 0 30px;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
     .descriptionContainer {
-        max-width: 600px;
+        max-width: 400px;
+    }
+
+    .description {
+        font-size: 1.05rem;
     }
 }
 

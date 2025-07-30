@@ -1,4 +1,5 @@
 import styles from './About.module.css';
+import { FaGraduationCap } from "react-icons/fa";
 
 export default function About() {
     return (
@@ -20,7 +21,22 @@ export default function About() {
                     software that makes a difference.
                 </p>
                 <div className={styles.boxes}>
-                    <div className={styles.education}></div>
+                    <div className={styles.education}>
+                        <div className={styles.educationTitle}>
+                            <div className={styles.educationIcon}>
+                                <FaGraduationCap size={25} color="#bf5700"/>
+                            </div>
+                            <h3>Education</h3>
+                        </div>
+                        <div className={styles.educationContent}>
+                            <ul>
+                                <li>B.S. Computer Science</li>
+                                <li>University of Texas at Austin</li>
+                                <li>Expected: May 2026</li>
+                                <li>GPA: 3.58</li>
+                            </ul>
+                        </div>
+                    </div>
                     <div className={styles.skills}></div>
                 </div>
             </div>
