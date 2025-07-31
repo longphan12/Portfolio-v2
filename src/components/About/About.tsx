@@ -1,5 +1,5 @@
 import styles from './About.module.css';
-import { FaGraduationCap } from "react-icons/fa";
+import { FaCode, FaGraduationCap } from "react-icons/fa";
 
 export default function About() {
     return (
@@ -21,7 +21,7 @@ export default function About() {
                     software that makes a difference.
                 </p>
                 <div className={styles.boxes}>
-                    <div className={styles.education}>
+                    <div className={styles.box}>
                         <div className={styles.educationTitle}>
                             <div className={styles.educationIcon}>
                                 <FaGraduationCap size={25} color="#bf5700"/>
@@ -37,7 +37,23 @@ export default function About() {
                             </ul>
                         </div>
                     </div>
-                    <div className={styles.skills}></div>
+                    <div className={styles.box}>
+                        <div className={styles.educationTitle}>
+                            <div className={styles.educationIcon}>
+                                <FaCode size={25} color="#bf5700"/>
+                            </div>
+                            <h3>Skills</h3>
+                        </div>
+                        <div className={styles.educationContent}>
+                            <ul>
+                                <li>Full-Stack Development</li>
+                                <li>Cloud Computing</li>
+                                <li>Software Engineering</li>
+                                <li>Devops</li>
+                                <li>OOP & DSA</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 

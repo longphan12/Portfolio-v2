@@ -16,24 +16,16 @@
 .boxes {
     display: flex;
     justify-content: center;
-    height: 200px;
+    min-height: 100px;
     gap: 15px;
 }
 
-.skills {
+.box{
     width: 100%;
     border: 1px solid #fff;
-    height: 100%;
     border-radius: 20px;
     background-color: #2C2C6C;
-}
-
-.education {
-    width: 100%;
-    border: 1px solid #fff;
-    height: 100%;
-    border-radius: 20px;
-    background-color: #2C2C6C;
+    padding-bottom: 20px;
 }
 
 .introduction {
@@ -114,16 +106,16 @@
     align-items: center;
 }
 
-.education ul {
+.box ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.education ul li {
+.box ul li {
     padding: 3px 0;
 }
-.education ul li:nth-child(1) {
+.box ul li:nth-child(1) {
     padding-top: 0;
 }
 
@@ -146,7 +138,19 @@
     .description {
         font-size: 1.05rem;
     }
+
+    .boxes {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .educationContent {
+        font-size: 0.8rem;
+    }
 }
+
 
 
 @keyframes elegantFadeIn {
