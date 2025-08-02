@@ -4,13 +4,124 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    padding: 100px 2rem 2rem 2rem;
     width: 100%;
     animation: elegantFadeIn 1.2s ease-out;
+    box-sizing: border-box;
+}
+
+.experienceBoxesContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    gap: 2rem;
+    align-items: center;
+}
+
+.experienceBox {
+    width: 100%;
+    max-width: 700px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(44, 44, 108, 0.8) 0%, rgba(44, 44, 108, 0.6) 100%);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.experienceBox:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.experienceHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+}
+
+.experienceCompany {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+}
+
+.experienceCompanyLogoImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.experienceCompanyLogoImage:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+.companyInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.companyName {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.jobTitle {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #bf5700;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.experienceDates {
+    display: flex;
+    align-items: center;
+}
+
+.dateRange {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.experienceContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.experienceDescription {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    text-align: justify;
 }
 
 .title {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
 .smallExperience {
@@ -29,4 +140,74 @@
     color: #ffffff;
     margin: 0;
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .experienceContainer {
+        padding: 80px 1rem 1rem 1rem;
+    }
+    
+    .experienceBoxesContainer {
+        max-width: 100%;
+    }
+    
+    .experienceBox {
+        padding: 1.25rem;
+        max-width: 100%;
+    }
+    
+    .experienceHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .experienceDates {
+        align-self: flex-start;
+    }
+    
+    .companyName {
+        font-size: 1.2rem;
+    }
+    
+    .jobTitle {
+        font-size: 0.95rem;
+    }
+    
+    .experienceTitle {
+        font-size: 2.5rem;
+    }
+    
+    .experienceDescription {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+    
+    .dateRange {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .experienceContainer {
+        padding: 70px 0.75rem 0.75rem 0.75rem;
+    }
+    
+    .experienceBox {
+        padding: 1rem;
+    }
+    
+    .companyName {
+        font-size: 1.1rem;
+    }
+    
+    .experienceTitle {
+        font-size: 2rem;
+    }
+    
+    .experienceDescription {
+        font-size: 0.85rem;
+    }
 }
