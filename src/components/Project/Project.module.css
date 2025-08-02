@@ -1,0 +1,303 @@
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 100px;
+    width: 100%;
+    animation: elegantFadeIn 1.2s ease-out;
+    text-align: center;
+}
+
+.smallProject {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #bf5700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+
+.projectTitle {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.projectBoxesContainer {
+    display: grid;
+    padding: 1rem;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* ProjectBox Styles */
+.projectBox {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(44, 44, 108, 0.8) 0%, rgba(44, 44, 108, 0.6) 100%);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.projectBox:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.projectImageContainer {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.projectImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.projectImage:hover {
+    transform: scale(1.05);
+}
+
+.projectContent {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.projectHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.projectDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.projectName {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.projectType {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #bf5700;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.projectDates {
+    display: flex;
+    align-items: center;
+}
+
+.dateRange {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.projectContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.projectDescription {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    text-align: justify;
+}
+
+.technologiesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.technologyTag {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #bf5700;
+    background: rgba(191, 87, 0, 0.1);
+    padding: 0.3rem 0.7rem;
+    border-radius: 15px;
+    border: 1px solid rgba(191, 87, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.technologyTag:hover {
+    background: rgba(191, 87, 0, 0.2);
+    border-color: rgba(191, 87, 0, 0.5);
+}
+
+.projectLinks {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.projectLink {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(135deg, #bf5700 0%, #d46a00 100%);
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(191, 87, 0, 0.3);
+    display: inline-block;
+}
+
+.projectLink:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(191, 87, 0, 0.4);
+    background: linear-gradient(135deg, #d46a00 0%, #bf5700 100%);
+}
+
+@keyframes elegantFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .projectContainer {
+        padding: 80px 1rem 1rem 1rem;
+    }
+    
+    .projectBoxesContainer {
+        max-width: 100%;
+        grid-template-columns: 1fr;
+    }
+    
+    .projectImageContainer {
+        height: 180px;
+    }
+    
+    .projectContent {
+        padding: 1.25rem;
+    }
+    
+    .projectHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .projectDates {
+        align-self: flex-start;
+    }
+    
+    .projectName {
+        font-size: 1.2rem;
+    }
+    
+    .projectType {
+        font-size: 0.95rem;
+    }
+    
+    .projectTitle {
+        font-size: 2.5rem;
+    }
+    
+    .projectDescription {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+    
+    .dateRange {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.7rem;
+    }
+    
+    .projectLinks {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .projectLink {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .projectContainer {
+        padding: 70px 0.75rem 0.75rem 0.75rem;
+    }
+    
+    .projectImageContainer {
+        height: 160px;
+    }
+    
+    .projectContent {
+        padding: 1rem;
+    }
+    
+    .projectName {
+        font-size: 1.1rem;
+    }
+    
+    .projectTitle {
+        font-size: 2rem;
+    }
+    
+    .projectDescription {
+        font-size: 0.85rem;
+    }
+    
+    .technologyTag {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.6rem;
+    }
+}

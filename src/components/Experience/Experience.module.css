@@ -4,10 +4,9 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding: 100px 2rem 2rem 2rem;
+    padding-top: 100px;
     width: 100%;
     animation: elegantFadeIn 1.2s ease-out;
-    box-sizing: border-box;
 }
 
 .experienceBoxesContainer {
@@ -27,7 +26,7 @@
     background: linear-gradient(135deg, rgba(44, 44, 108, 0.8) 0%, rgba(44, 44, 108, 0.6) 100%);
     backdrop-filter: blur(10px);
     color: #fff;
-    padding: 1.5rem;
+    padding: 1rem;
     transition: all 0.3s ease;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
@@ -209,5 +208,16 @@
     
     .experienceDescription {
         font-size: 0.85rem;
+    }
+}
+
+@keyframes elegantFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
