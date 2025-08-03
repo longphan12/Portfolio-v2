@@ -1,0 +1,67 @@
+.techContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 20px;
+    width: 100%;
+    animation: elegantFadeIn 1.2s ease-out;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.smallTech {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #bf5700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+
+.techTitle {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.techBoxesContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.techBox {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.techBoxTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.techBoxDescription {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.techBoxDescription li {
+    font-size: 1rem;
+    color: #ffffff;
+}

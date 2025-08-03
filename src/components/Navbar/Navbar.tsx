@@ -17,6 +17,9 @@ export default function Navbar() {
             <a href='#projects' className={styles.navLinks}>
                 <AiOutlineCode color='white' />
             </a>
+            <a href='#tech' className={styles.navLinks}>
+                <AiOutlineCode color='white' />
+            </a>
         </nav>
     )
 }

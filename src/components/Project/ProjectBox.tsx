@@ -2,7 +2,7 @@ import styles from './Project.module.css';
 
 interface ProjectBoxProps {
     projectName: string;
-    projectType: string;
+    projectStatus: string;
     dateRange: string;
     projectImage: string;
     description: string[];
@@ -13,7 +13,7 @@ interface ProjectBoxProps {
 
 export default function ProjectBox({
     projectName,
-    projectType,
+    projectStatus,
     dateRange,
     projectImage,
     description,
@@ -21,6 +21,16 @@ export default function ProjectBox({
     liveLink,
     githubLink
 }: ProjectBoxProps) {
+    const getStatusColor = (status: string) => {
+        const lowerStatus = status.toLowerCase();
+        if (lowerStatus === 'in progress' || lowerStatus === 'in-progress') {
+            return styles.statusTagInProgress;
+        } else if (lowerStatus === 'completed' || lowerStatus === 'complete') {
+            return styles.statusTagCompleted;
+        }
+        return styles.statusTag;
+    };
+
     return (
         <div className={styles.projectBox}>
             <div className={styles.projectImageContainer}>
@@ -35,7 +45,7 @@ export default function ProjectBox({
                 <div className={styles.projectHeader}>
                     <div className={styles.projectDetails}>
                         <h3 className={styles.projectName}>{projectName}</h3>
-                        <p className={styles.projectType}>{projectType}</p>
+                        <span className={getStatusColor(projectStatus)}>{projectStatus}</span>
                     </div>
                     <div className={styles.projectDates}>
                         <span className={styles.dateRange}>{dateRange}</span>

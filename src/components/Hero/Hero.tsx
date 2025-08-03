@@ -9,7 +9,9 @@ export default function Hero() {
 
     return (
         <div className={styles.container}>
-            <MdKeyboardArrowDown color={'#fff'} className={styles.scrollDown} size={30} />
+            <a href='#about'>
+                <MdKeyboardArrowDown color={'#fff'} className={styles.scrollDown} size={30} />
+            </a>
             <div className={styles.left}>
                 <h1 className={styles.name}>Long Phan</h1>
                 <p className={styles.title}>Software Engineer<span className={styles.typewriter}>|</span></p>

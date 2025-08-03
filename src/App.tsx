@@ -7,6 +7,7 @@ import Hero from './components/Hero/Hero'
 import About from './components/About/About'
 import Experience from './components/Experience/Experience'
 import Project from './components/Project/Project'
+import Tech from './components/Tech/Tech'
 
 function App() {
   const [mousePos, setMousePos] = useState({x: 0, y: 0})
@@ -29,10 +30,21 @@ function App() {
   return (
     <div className='appContainer' style={containerStyle as React.CSSProperties}>
       <Navbar />
-      <Hero />
-      <About />
-      <Experience />
-      <Project />
+      <div id='home'>
+        <Hero />
+      </div>
+      <div id='about'>
+        <About />
+      </div>
+      <div id='experience'>
+        <Experience />
+      </div>
+      <div id='projects'>
+        <Project />
+      </div>
+      <div id='tech'>
+        <Tech />
+      </div>
     </div>
   )
 }

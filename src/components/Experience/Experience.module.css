@@ -4,9 +4,11 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding-top: 100px;
+    margin-bottom: 100px;
     width: 100%;
+    padding-top: 20px;
     animation: elegantFadeIn 1.2s ease-out;
+    box-sizing: border-box;
 }
 
 .experienceBoxesContainer {
@@ -16,6 +18,7 @@
     max-width: 700px;
     gap: 2rem;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .experienceBox {
@@ -144,16 +147,22 @@
 /* Responsive design */
 @media (max-width: 768px) {
     .experienceContainer {
-        padding: 80px 1rem 1rem 1rem;
+        padding: 20px 1rem 1rem 1rem;
+        box-sizing: border-box;
     }
     
     .experienceBoxesContainer {
         max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 1rem;
     }
     
     .experienceBox {
         padding: 1.25rem;
         max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
     }
     
     .experienceHeader {
@@ -192,10 +201,19 @@
 @media (max-width: 480px) {
     .experienceContainer {
         padding: 70px 0.75rem 0.75rem 0.75rem;
+        box-sizing: border-box;
+    }
+    
+    .experienceBoxesContainer {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 0.5rem;
     }
     
     .experienceBox {
         padding: 1rem;
+        width: 100%;
+        box-sizing: border-box;
     }
     
     .companyName {

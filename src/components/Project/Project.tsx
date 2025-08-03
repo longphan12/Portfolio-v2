@@ -1,5 +1,8 @@
 import styles from './Project.module.css';
 import ProjectBox from './ProjectBox';
+import prizepickers from '../../assets/prizepickers-scr.png';
+import justicewatch from '../../assets/justicewatch-scr.jpeg';
+import marketanalyzer from '../../assets/marketanalyzer-scr.jpeg';
 
 export default function Project() {
     return (
@@ -11,44 +14,41 @@ export default function Project() {
 
             <div className={styles.projectBoxesContainer}>
                 <ProjectBox
-                    projectName="Portfolio Website"
-                    projectType="Personal Project"
-                    dateRange="2024"
-                    projectImage="/src/assets/react.svg"
+                    projectName="PrizePickers"
+                    projectStatus="In Progress"
+                    dateRange="Mar. 2025 - Present"
+                    projectImage={prizepickers}
                     description={[
-                        "A modern, responsive portfolio website built with React and TypeScript. Features smooth animations, dark theme, and mobile-first design.",
-                        "Implemented with CSS modules for styling and includes sections for experience, projects, and contact information."
+                        "Built a full-stack analytics platform to deliver NBA betting recommendations using weighted models."
                     ]}
-                    technologies={["React", "TypeScript", "CSS Modules", "Vite"]}
-                    liveLink="https://your-portfolio.com"
-                    githubLink="https://github.com/yourusername/portfolio"
+                    technologies={["React", "TypeScript", "Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS", "Flask", "Python"]}
+                    githubLink="https://github.com/stoven2k17/PrizePickers"
                 />
                 
                 <ProjectBox
-                    projectName="E-commerce Platform"
-                    projectType="Full-Stack Application"
-                    dateRange="2023 - 2024"
-                    projectImage="/src/assets/react.svg"
+                    projectName="JusticeWatch"
+                    projectStatus="Completed"
+                    dateRange="Feb. 2025 - May 2025"
+                    projectImage={justicewatch}
                     description={[
-                        "A complete e-commerce solution with user authentication, product management, shopping cart, and payment integration.",
-                        "Built with modern web technologies and follows RESTful API principles for scalability and maintainability."
+                        "Developed a civic tech platform visualizing police performance and safety legislation for public transparency."
                     ]}
-                    technologies={["React", "Node.js", "Express", "MongoDB", "Stripe"]}
-                    liveLink="https://your-ecommerce.com"
-                    githubLink="https://github.com/yourusername/ecommerce"
+                    technologies={["Next.js", "React", "Tailwind CSS", "TypeScript", "Shadcn UI", "Flask", "PostgreSQL", "Docker", "AWS"]}
+                    liveLink="https://www.justicewatch.xyz/"
+                    githubLink="https://github.com/longphan12/JusticeWatch"
                 />
                 
                 <ProjectBox
-                    projectName="Task Management App"
-                    projectType="Web Application"
-                    dateRange="2023"
-                    projectImage="/src/assets/react.svg"
+                    projectName="Corey Construction Market Analyzer"
+                    projectStatus="Completed"
+                    dateRange="Apr. 2025"
+                    projectImage={marketanalyzer}
                     description={[
-                        "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-                        "Includes user roles, project boards, and comprehensive task tracking with deadline management."
+                        "Automated data extraction and analysis of housing data from PDFs, reducing manual processing time by 80%."
                     ]}
-                    technologies={["React", "Firebase", "Material-UI", "React DnD"]}
-                    githubLink="https://github.com/yourusername/task-manager"
+                    technologies={["HTML", "CSS", "JavaScript", "OpenAI API", "Python"]}
+                    liveLink="https://drive.google.com/file/d/1pXIG83_FE1CYLPYvLkKK74nVQFy0-Cu5/view?usp=sharing"
+                    githubLink="https://github.com/longphan12/MarketAnalyzer"
                 />
             </div>
         </div>

@@ -4,10 +4,41 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding-top: 100px;
+    padding-top: 20px;
     width: 100%;
     animation: elegantFadeIn 1.2s ease-out;
     text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+
+.statusTag {
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-style: italic;
+    color: #bf5700;
+    display: block;
+    margin-top: 0.25rem;
+}
+
+.statusTagInProgress {
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-style: italic;
+    color: #dc2626;
+    display: block;
+    margin-top: 0.25rem;
+    text-align: start;
+}
+
+.statusTagCompleted {
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-style: italic;
+    color: #16a34a;
+    display: block;
+    margin-top: 0.25rem;
+    text-align: start;
 }
 
 .smallProject {
@@ -44,6 +75,7 @@
     grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
     width: 100%;
     max-width: 1200px;
+    box-sizing: border-box;
 }
 
 /* ProjectBox Styles */
@@ -60,6 +92,7 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .projectBox:hover {
@@ -73,6 +106,7 @@
     height: 200px;
     overflow: hidden;
     position: relative;
+    box-sizing: border-box;
 }
 
 .projectImage {
@@ -91,6 +125,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    box-sizing: border-box;
 }
 
 .projectHeader {
@@ -98,12 +133,14 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 1rem;
+    box-sizing: border-box;
 }
 
 .projectDetails {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+    box-sizing: border-box;
 }
 
 .projectName {
@@ -111,7 +148,9 @@
     font-weight: 700;
     color: #ffffff;
     margin: 0;
+    text-align: start;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
 }
 
 .projectType {
@@ -213,7 +252,7 @@
 /* Responsive design */
 @media (max-width: 768px) {
     .projectContainer {
-        padding: 80px 1rem 1rem 1rem;
+        padding: 20px 1rem 1rem 1rem;
     }
     
     .projectBoxesContainer {
