@@ -5,10 +5,51 @@ export default function Tech() {
         {
             title: 'Techical Skills',
             description: [
-                'Data Structures & Algorithms', 
+                'Data Structures', 
                 'Object-Oriented Programming',
                 'Web Development',
                 'Devops'
+            ]
+        }, 
+        {
+            title: 'Programming Languages',
+            description: [
+                "Python", 
+                "JavaScript", 
+                "TypeScript", 
+                "Java", 
+                "C/C++", 
+                "SQL" , 
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            title: 'Frameworks & Databases',
+            description: [
+                'React', 
+                'Node.js', 
+                'Express.js',
+                'Next.js', 
+                'Spring Boot', 
+                'Tailwind CSS', 
+                'Bootstrap',
+                'PostgreSQL', 
+                'MySQL', 
+                'MongoDB'
+            ]
+        }, 
+        {
+            title: 'Developer Tools and Testing',
+            description: [
+                "Git",  
+                "AWS", 
+                "Postman", 
+                "Docker", 
+                "CI/CD", 
+                "Jest", 
+                "Selenium", 
+                "Google Test", 
             ]
         }
     ]
@@ -20,7 +61,12 @@ export default function Tech() {
             </div>
             <div className={styles.techBoxesContainer}>
                 {techBoxes.map((techBox, index) => (
-                    <TechBox key={index} title={techBox.title} description={techBox.description}/>
+                    <TechBox 
+                        key={index} 
+                        title={techBox.title} 
+                        description={techBox.description}
+                        singleColumn={index === 0}
+                    />
                 ))}
             </div>
         </div>
