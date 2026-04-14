@@ -222,7 +222,7 @@
 .projectLink {
     font-size: 0.9rem;
     font-weight: 600;
-    color: #ffffff;
+    color: #ffffff !important;
     background: linear-gradient(135deg, #bf5700 0%, #d46a00 100%);
     padding: 0.6rem 1.2rem;
     border-radius: 10px;
@@ -233,9 +233,18 @@
 }
 
 .projectLink:hover {
+    color: #ffffff !important;
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(191, 87, 0, 0.4);
     background: linear-gradient(135deg, #d46a00 0%, #bf5700 100%);
+}
+
+.projectLink:visited {
+    color: #ffffff !important;
+}
+
+.projectLink:active {
+    color: #ffffff !important;
 }
 
 @keyframes elegantFadeIn {

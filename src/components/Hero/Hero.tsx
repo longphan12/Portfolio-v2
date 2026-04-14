@@ -16,7 +16,7 @@ export default function Hero() {
                 <h1 className={styles.name}>Long Phan</h1>
                 <p className={styles.title}>Software Engineer<span className={styles.typewriter}>|</span></p>
                 <div className={styles.socials}>
-                    <a href='https://www.linkedin.com/in/long-phan-1203t/' target='_blank' rel='noopener noreferrer'>
+                    <a href='https://www.linkedin.com/in/longphan084/' target='_blank' rel='noopener noreferrer'>
                         <FaLinkedin size={25} color={'rgb(0, 119, 181)'}/>
                     </a>
                     <a href='https://github.com/longphan12' target='_blank' rel='noopener noreferrer'>
@@ -27,10 +27,10 @@ export default function Hero() {
                     </a>
                 </div>
                 <div className={styles.buttons}>
-                    <div className={styles.buttonContainer}>
+                    <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1_tylWnZwn03eFWd1GM57p6LhhSaQdytm/view?usp=sharing" className={styles.buttonContainer}>
                         <button className={styles.resumeButton}><GoDownload size={15}/> Resume</button>
                         <div className={styles.shadow}></div>
-                    </div>
+                    </a>
                     <div className={styles.buttonContainer}>
                         <button className={styles.contactButton}>Contact</button>
                         <div className={styles.shadow}></div>

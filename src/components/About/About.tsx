@@ -10,15 +10,15 @@ export default function About() {
             </div>
             <div className={styles.descriptionContainer}>
                 <p className={styles.description}>
-                    Hello! I'm Long Phan, a passionate Software Engineer with hands-on experience in 
-                    Full-Stack Development at CodePath and technical expertise at Apple. I specialize 
-                    in creating innovative web solutions and mentoring the next generation of developers.
+                    I’m Long Phan, a software engineer who enjoys building 
+                    things that people actually use. I’ve worked across the 
+                    stack with React, Node.js, and Spring Boot at startups like 
+                    ReplyQuickAI and Complama, and I’ll be joining General Motors 
+                    as a Software Engineer.
                 </p>
                 <p className={styles.description}>
-                    When I'm not coding, you'll find me leading coding camps as a Software Engineer Instructor, 
-                    teaching algorithms and full-stack development, or providing technical support and 
-                    customer solutions at Apple. I'm passionate about education, technology, and building 
-                    software that makes a difference.
+                    I also enjoy teaching and mentoring, whether as a TA or running coding workshops. 
+                    I like solving real problems and helping others grow along the way.
                 </p>
                 <div className={styles.boxes}>
                     <div className={styles.box}>

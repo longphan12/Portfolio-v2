@@ -88,3 +88,122 @@
     font-weight: 600;
 }
 
+.techBoxDescriptionSingle li:hover {
+    color: #bf5700;
+    transition: all 0.3s ease;
+    transform: translateY(-1px);
+}
+
+.techBoxDescription li:hover {
+    color: #bf5700;
+    transition: all 0.3s ease;
+    transform: translateY(-1px);
+}
+
+@keyframes elegantFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .techBoxesContainer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .techBox {
+        min-width: unset;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .techContainer {
+        padding: 20px 1rem 1rem 1rem;
+    }
+
+    .title {
+        margin-bottom: 2rem;
+    }
+
+    .techTitle {
+        font-size: 2.5rem;
+    }
+
+    .techBoxesContainer {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        width: 100%;
+        max-width: 600px;
+        padding: 0 1rem;
+    }
+
+    .techBox {
+        min-width: unset;
+        width: 100%;
+        padding: 25px;
+        box-sizing: border-box;
+    }
+
+    .techBoxTitle {
+        font-size: 1.3rem;
+    }
+
+    .techBoxDescription {
+        column-count: 2;
+    }
+
+    .techBoxDescriptionSingle {
+        column-count: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .techContainer {
+        padding: 20px 0.75rem 0.75rem 0.75rem;
+    }
+
+    .techTitle {
+        font-size: 2rem;
+    }
+
+    .smallTech {
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+    }
+
+    .techBoxesContainer {
+        gap: 1rem;
+        padding: 0 0.5rem;
+    }
+
+    .techBox {
+        padding: 20px;
+    }
+
+    .techBoxTitle {
+        font-size: 1.2rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .techBoxDescription {
+        column-count: 1;
+    }
+
+    .techBoxDescriptionSingle {
+        column-count: 1;
+    }
+
+    .techBoxDescription li,
+    .techBoxDescriptionSingle li {
+        font-size: 0.9rem;
+    }
+}
+

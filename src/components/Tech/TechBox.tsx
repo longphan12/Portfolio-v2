@@ -10,7 +10,7 @@ export default function TechBox({title, description, singleColumn = false} : Tec
             <h3 className={styles.techBoxTitle}>{title}</h3>
             <ul className={singleColumn ? styles.techBoxDescriptionSingle : styles.techBoxDescription}>
                 {description.map((item, index) => (
-                    <li key={index}>{item}</li>
+                    <li key={index}><span style={{color: '#bf5700', fontSize: '1.5rem'}}>•</span> {item}</li>
                 ))}
             </ul>
         </div>
