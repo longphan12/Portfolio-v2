@@ -34,7 +34,7 @@ export default function Footer({ id }: FooterProps) {
                     <h4 className={styles.sectionTitle}>Connect</h4>
                     <div className={styles.socialLinks}>
                         <a 
-                            href="https://www.linkedin.com/in/long-phan-1203t/" 
+                            href="https://www.linkedin.com/in/longphan084/" 
                             target="_blank" 
                             rel="noopener noreferrer"
                             className={styles.socialLink}

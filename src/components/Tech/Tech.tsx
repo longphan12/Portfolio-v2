@@ -3,7 +3,7 @@ import TechBox from './TechBox';
 export default function Tech() {
     const techBoxes = [
         {
-            title: 'Techical Skills',
+            title: 'Technical Skills',
             description: [
                 'Data Structures', 
                 'Object-Oriented Programming',
